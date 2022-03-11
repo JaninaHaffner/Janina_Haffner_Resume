@@ -1,0 +1,51 @@
+#borderimg {
+	border-image: url(border.png) 30 round;
+	border-style: groove;
+	border-color: skyblue;
+}
+
+body {
+	background-color: skyblue;
+	width: 80%;
+	margin: auto;
+}	
+
+#container {
+	display: grid;
+}
+
+header {
+	grid-column: 1/13;
+	grid-row: 1;
+	text-align: center;
+}
+
+section {
+	grid-column: 1/5;
+	grid-row: 2;
+	padding: 2px;
+	font-size: 15px;
+	
+}
+
+aside {
+	grid-column: 5/13;
+	grid-row: 2;
+	padding: 2px;
+}
+
+img {
+	border-radius: 8px;
+	max-width: auto;
+	max-height: 100%;
+}
+
+.tab1 {
+	tab-size: 4;
+}
+
+/* Referring:
+https://www.w3schools.com/css/css3_images.asp
+https://www.w3schools.com/cssref/pr_background-color.asp
+https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/#:~:text=The%20tab%20character%20can%20be,pressing%200%20and%209%20together.&text=A%20new%20class%20can%20be,pixels%20specified%20in%20this%20property.
+*/
