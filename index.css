@@ -44,8 +44,22 @@ img {
 	tab-size: 4;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Stops the float property from affecting content after the columns */
+.columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Referring:
 https://www.w3schools.com/css/css3_images.asp
 https://www.w3schools.com/cssref/pr_background-color.asp
 https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/#:~:text=The%20tab%20character%20can%20be,pressing%200%20and%209%20together.&text=A%20new%20class%20can%20be,pixels%20specified%20in%20this%20property.
+https://devpractical.com/divide-div-into-three-columns/
+https://www.teachucomp.com/create-html-bullet-points-instructions/
 */
