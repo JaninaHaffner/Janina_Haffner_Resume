@@ -1,61 +1,69 @@
-#borderimg {
-	border-image: url(border.png) 30 round;
-	border-style: groove;
-	border-color: skyblue;
-}
+<style>
+      img {
+        display: block;
+        width: 200px;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .centre {
+        text-align: center;
+        align-items: center;
+      }
 
-body {
-	background-color: skyblue;
-	width: 80%;
-	margin: auto;
-}	
+      /* Create two columns that floats next to each other */
+      .columns {
+        width: 100%;
+      }
+      .column-1,
+      .column-2 {
+        width: 100%;
+      }
+      @media (min-width: 48em) {
+        .column-1 {
+          padding: 1%;
+          width: 20%;
+          float: left;
+        }
+        .column-2 {
+          padding: 1%;
+          width: 76%;
+          float: left;
+        }
 
-#container {
-	display: grid;
-}
-
-header {
-	grid-column: 1/13;
-	grid-row: 1;
-	text-align: center;
-}
-
-section {
-	grid-column: 1/5;
-	grid-row: 2;
-	padding: 2px;
-	font-size: 15px;
-	
-}
-
-aside {
-	grid-column: 5/13;
-	grid-row: 2;
-	padding: 2px;
-}
-
-img {
-	border-radius: 8px;
-	max-width: auto;
-	max-height: 100%;
-}
-
-.tab1 {
-	tab-size: 4;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-}
-
-/* Stops the float property from affecting content after the columns */
-.columns:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+        /* Clear floats after the columns */
+        .columns {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      }
+      .col {
+        width: 100%;
+      }
+      .col-1,
+      .col-2 {
+        width: 100%;
+      }
+      @media (min-width: 20em) {
+        .col-1 {
+          width: 10%;
+          float: left;
+        }
+        .col-2 {
+          width: 90%;
+          float: left;
+        }
+        .cols {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      }
+    </style>
 /* Referring:
 https://www.w3schools.com/css/css3_images.asp
 https://www.w3schools.com/cssref/pr_background-color.asp
